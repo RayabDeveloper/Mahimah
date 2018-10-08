@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.rayab.mahimah.Activities.actLoginer">
+
+    <RelativeLayout
+        android:id="@+id/relMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_loading"
+        android:gravity="center|bottom">
+
+        <ImageView
+            android:id="@+id/imgLogoGIF"
+            android:transitionName="logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/logo"/>
+
+        <ImageView
+            android:id="@+id/imgLogoFa"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/logo_name_fa"/>
+
+        <ImageView
+            android:id="@+id/imgLogoEn"
+            android:layout_width="80dp"
+            android:layout_height="5dp"
+            android:layout_below="@+id/imgLogoFa"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logo_name_en"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="50dp"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

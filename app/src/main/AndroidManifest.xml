@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.rayab.mahimah">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize">
+        <activity android:name=".Activities.actMain" />
+        <activity
+            android:name=".Activities.Services.actGroups"
+            android:label="@string/title_activity_act_groups" />
+        <activity
+            android:name=".Activities.Services.actServices"
+            android:label="@string/title_activity_act_services" />
+        <activity
+            android:name=".Activities.Services.actNewService"
+            android:label="@string/title_activity_act_new_service" />
+        <activity
+            android:name=".Activities.Services.actNewGroup"
+            android:label="@string/title_activity_act_new_group" />
+        <activity
+            android:name=".Activities.actSetting"
+            android:label="@string/title_activity_act_setting" />
+        <activity
+            android:name=".Activities.Offers.actOfferTime"
+            android:label="@string/title_activity_act_offer_time" />
+        <activity
+            android:name=".Activities.Offers.actOfferChoise"
+            android:label="@string/title_activity_act_offer_choise" />
+        <activity android:name=".Activities.actLoginer">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.Offers.actNewOfferChoise" />
+        <activity android:name=".Activities.Offers.actNewOfferTime" />
+        <activity android:name=".Activities.Offers.actSkill" />
+        <activity android:name=".Activities.Offers.actSkillNew" />
+        <activity
+            android:name=".Activities.Fragment.actTest"
+            android:theme="@style/Dialog" />
+
+        <activity android:name=".Activities.actTest">
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#152746</color>
+    <color name="colorPrimaryDark">#152746</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorButtoner">#172846</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorOpasion">#868b97</color>
+    <color name="colorbColor">#152746</color>
+    <color name="colorPriceNew">#797b7e</color>
+    <color name="Gray">#9b9d9f</color>
+    <color name="Gray0">#e6e6e6</color>
+    <color name="Gray1">#c7c5c5</color>
+    <color name="Blue">#007cf9</color>
+    <color name="Black">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="card">#374761</color>
+    <color name="Red">#fa575a</color>
+    <color name="Green">#51d14f</color>
+    <color name="UpTitleUnSelecte">#2d323c</color>
+    <color name="UpTitleSelecte">#1e5866</color>
+    <color name="AllPrice">#516896</color>
+    <color name="CurrentPrice">#285853</color>
+
+    <color name="mdtp_date_picker_text_highlighted">#d92c28</color>
+
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.actMain">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/header">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgSumer"
+                        android:transitionName="palette"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="6dp"
+                        android:visibility="gone"
+                        android:background="@drawable/main_sum"/>
+
+                    <TextView
+                        android:id="@+id/lblMainSum"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="6dp"
+                        android:text="0"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="6dp">
+
+                    <TextView
+                        android:id="@+id/lblCurrentSum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="6dp"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="0" />
+
+                    <com.devsmart.android.ui.HorizontalListView
+                        android:id="@+id/lstCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:padding="6dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_margin="16dp">
+
+                    <ImageView
+                        android:id="@+id/btnMenuIcon"
+                        android:transitionName="text"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/menu_icon"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

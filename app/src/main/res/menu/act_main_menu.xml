@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/gp1"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_main"
+            android:title="صفحه اصلی"
+            android:icon="@drawable/mani"/>
+        <item
+            android:id="@+id/nav_group"
+            android:title="گروه ها"
+            android:icon="@drawable/group"/>
+        <item
+            android:id="@+id/nav_service"
+            android:title="خدمات"
+            android:icon="@drawable/service"/>
+    </group>
+    <group
+        android:id="@+id/gp2"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_offer_choise"
+            android:title="تخفیف انتخابی"
+            android:icon="@drawable/offer_1"/>
+    </group>
+    <group
+        android:id="@+id/gp3"
+        android:visible="false"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_dataTransporter"
+            android:title="به روز رسانی اطلاعات"
+            android:icon="@drawable/renew"/>
+    </group>
+</menu>

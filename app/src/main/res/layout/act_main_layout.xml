@@ -1,0 +1,440 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.actMain">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordiantLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="0dp"
+                android:layout_height="0dp">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/main_toolbar" />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <RelativeLayout
+                android:id="@+id/relTool"
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <LinearLayout
+                    android:id="@+id/linTool"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/header">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imgSumer"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_margin="6dp"
+                                    android:background="@drawable/main_sum"
+                                    android:transitionName="palette"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/lblMainSum"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
+                                    android:text="0"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="25dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/lblCurrentSum"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="6dp"
+                                    android:text="0"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="10sp" />
+
+                                <com.devsmart.android.ui.HorizontalListView
+                                    android:id="@+id/lstCount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginTop="6dp"
+                                    android:padding="6dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="16dp"
+                                android:gravity="right">
+
+                                <ImageView
+                                    android:id="@+id/btnMenuIcon"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/menu_icon"
+                                    android:transitionName="text"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/lstFilterGrid"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:columnWidth="130dp"
+                            android:numColumns="auto_fit"
+                            android:horizontalSpacing="0dp"
+                            android:verticalSpacing="0dp"
+                            android:scrollbarAlwaysDrawHorizontalTrack="true"
+                            android:scrollbarAlwaysDrawVerticalTrack="true"
+                            android:scrollbars="horizontal"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/relTool">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <net.rayab.mahimah.Component.ReternRecyclerView
+                            android:id="@+id/lstMain"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/relTool2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <LinearLayout
+                    android:id="@+id/linWidth"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="57dp"
+                            android:background="@color/colorButtoner"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/btnDelete"
+                                android:layout_width="46dp"
+                                android:layout_height="46dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="6dp"
+                                android:padding="5dp"
+                                android:src="@drawable/deletenew2" />
+
+                            <ImageView
+                                android:id="@+id/btnPackage"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="12dp"
+                                android:src="@drawable/package_variant" />
+
+                            <ImageView
+                                android:id="@+id/btnAdd"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="12dp"
+                                android:src="@drawable/add_plus" />
+
+                            <ImageView
+                                android:id="@+id/btnReport"
+                                android:layout_width="46dp"
+                                android:layout_height="46dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="6dp"
+                                android:padding="5dp"
+                                android:src="@drawable/report" />
+
+                            <ImageView
+                                android:id="@+id/btnDate"
+                                android:layout_width="46dp"
+                                android:layout_height="46dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="6dp"
+                                android:padding="5dp"
+                                android:src="@drawable/date" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linFilter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="46dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:visibility="gone">
+
+                            <com.devsmart.android.ui.HorizontalListView
+                                android:id="@+id/lstFilter"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="6dp"
+                                android:divider="#ffffff"
+                                android:fillViewport="false" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center|right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/lblSkill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:text="گروه ها"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:transitionName="lblGroup" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnSetting2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:transitionName="btnGroup"
+                app:backgroundTint="@color/colorAccent"
+                app:elevation="26dp"
+                app:fabSize="mini"
+                app:pressedTranslationZ="12dp"
+                app:srcCompat="@drawable/plus" />
+
+            <TextView
+                android:id="@+id/lblService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="خدمات"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:transitionName="lblService" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnSetting3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:transitionName="btnService"
+                app:backgroundTint="@color/colorAccent"
+                app:elevation="26dp"
+                app:fabSize="mini"
+                app:pressedTranslationZ="12dp"
+                app:srcCompat="@drawable/plus" />
+
+            <TextView
+                android:id="@+id/lblSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تنظیمات"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:transitionName="lblSetting" />
+
+            <TextView
+                android:id="@+id/lblTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="تخفیف همزمانی"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:transitionName="lblTime" />
+
+            <TextView
+                android:id="@+id/lblChoise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="تخفیف انتخاب"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:transitionName="lblChoise" />
+
+            <TextView
+                android:id="@+id/lblService1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:gravity="right"
+                android:text="سرویس اول"
+                android:textColor="@android:color/tab_indicator_text"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:transitionName="lblService1" />
+
+            <TextView
+                android:id="@+id/lblService2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:gravity="right"
+                android:text="سرویس دوم"
+                android:textColor="@android:color/tab_indicator_text"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:transitionName="lblService2" />
+
+            <TextView
+                android:id="@+id/lblSkillList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:gravity="right"
+                android:text="مبلغ تخفیف"
+                android:textColor="@android:color/tab_indicator_text"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:transitionName="lblOffer" />
+
+            <EditText
+                android:id="@+id/txtSkillPrice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:hint="مبلغ را وارد کنید"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:transitionName="txtOffer" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnAccept"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:transitionName="btn"
+                app:backgroundTint="@color/colorAccent"
+                app:elevation="26dp"
+                app:fabSize="mini"
+                app:pressedTranslationZ="12dp"
+                app:srcCompat="@drawable/ic_library_add_black_48dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>

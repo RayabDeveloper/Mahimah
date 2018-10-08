@@ -1,0 +1,290 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.Services.actNewService">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordiantLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme"
+                android:visibility="gone">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme"
+                    android:visibility="gone"/>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/header">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/lblNewService"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:transitionName="lblService"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="ایجاد خدمات"/>
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray"
+                            android:layout_marginTop="6dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_margin="16dp">
+
+                        <ImageView
+                            android:id="@+id/btnMenuIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/menu_icon"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lin"
+                    android:layout_marginBottom="56dp"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lblService"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:transitionName="lblService2"
+                            android:textColor="@android:color/tab_indicator_text"
+                            android:gravity="right"
+                            android:layout_margin="6dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="سرویس"/>
+
+                        <EditText
+                            android:id="@+id/txtService"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:transitionName="txtService"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingLeft="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/text_border"
+                            android:textColor="@android:color/black"
+                            android:imeOptions="actionNext"
+                            android:hint="نام سرویس را وارد کنید"
+                            android:textColorHint="@android:color/darker_gray"/>
+
+                        <TextView
+                            android:id="@+id/lblSkill"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:transitionName="lblGroup"
+                            android:textColor="@android:color/tab_indicator_text"
+                            android:gravity="right"
+                            android:layout_margin="6dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="گروه"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:padding="3dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/text_border"
+                            android:layoutDirection="rtl">
+
+                            <Spinner
+                                android:id="@+id/spinGroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/lblPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:transitionName="lblPrice"
+                            android:textColor="@android:color/tab_indicator_text"
+                            android:gravity="right"
+                            android:layout_margin="6dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:inputType="phone"
+                            android:text="مبلغ قدیم"/>
+
+                        <EditText
+                            android:id="@+id/txtPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:transitionName="txtPrice"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingLeft="16dp"
+                            android:background="@drawable/text_border"
+                            android:textColor="@android:color/black"
+                            android:imeOptions="actionNext"
+                            android:inputType="phone"
+                            android:gravity="center"
+                            android:hint="مبلغ را وارد کنید"
+                            android:textColorHint="@android:color/darker_gray"/>
+
+                        <TextView
+                            android:id="@+id/lblPriceNew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:transitionName="lblPrice"
+                            android:textColor="@android:color/tab_indicator_text"
+                            android:gravity="right"
+                            android:layout_margin="6dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:inputType="phone"
+                            android:text="مبلغ جدید"/>
+
+                        <EditText
+                            android:id="@+id/txtPriceNew"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:transitionName="txtPrice"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingLeft="16dp"
+                            android:background="@drawable/text_border"
+                            android:textColor="@android:color/black"
+                            android:inputType="phone"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:hint="مبلغ را وارد کنید"
+                            android:textColorHint="@android:color/darker_gray"/>
+
+                        <EditText
+                            android:id="@+id/txtDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:transitionName="txtDes"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:textSize="18sp"
+                            android:singleLine="false"
+                            android:inputType="textMultiLine"
+                            android:scrollbars="vertical"
+                            android:scrollHorizontally="false"
+                            android:imeOptions="actionDone"
+                            android:padding="16dp"
+                            android:gravity="center|top|right"
+                            android:background="@drawable/richtext_border"
+                            android:textColor="@android:color/black"
+                            android:hint="توضیحات سرویس"
+                            android:textColorHint="@android:color/darker_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"/>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linWidth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <RelativeLayout
+                    android:id="@+id/RelSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal"
+                        android:background="@color/colorButtoner">
+
+                        <ImageView
+                            android:id="@+id/btnAccept"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/update2"/>
+
+                        <ImageView
+                            android:id="@+id/btnCancell"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:src="@drawable/delete_empty"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

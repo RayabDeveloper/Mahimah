@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Mahimah</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_act_groups">actGroups</string>
+    <string name="title_activity_act_services">actServices</string>
+    <string name="title_activity_act_new_service">actNewService</string>
+    <string name="title_activity_act_new_group">ActNewGroup</string>
+    <string name="title_activity_act_setting">actSetting</string>
+    <string name="title_activity_act_offer_time">actOfferTime</string>
+    <string name="title_activity_act_offer_choise">actOfferChoise</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ACCEPT">Hello blank fragment</string>
+    <string name="CANCEL">Hello blank fragment</string>
+</resources>
